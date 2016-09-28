@@ -2,15 +2,14 @@
 public class Primzahlen {
 	
 	static int number = 0;
-			
+		static	int i;
 
 	public static void main(String[] args) {
 		int ausgabe=0;
-	System.out.println ("Primzahlen");
+	System.out.println("Primzahlen");
 	
 	for(int i=number; i<= 10000; i++);{
-
-
+		number=i;
 	if(isPrime(number)==true){
 	System.out.print(number + ", ");
 	ausgabe++;
@@ -23,9 +22,9 @@ public class Primzahlen {
 	}
 	}
  
-	public static boolean isPrime(int number ) {
+	public static boolean isPrime(int number){
 		
-		if( number <2){return false;}
+		if(number<2){return false;}
 		
 		for(int i=2; i<=number/2; i++){
 				if(number%i==0){
